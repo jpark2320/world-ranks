@@ -101,9 +101,9 @@ export default function CountryTable({ countries }) {
       </div>
 
       {orderedCountries.map((country) => (
-        <Link href={`/country/${country.alpha3Code}`}>
+        <Link href={`/country/${country.alpha3Code}`} key={country.name}>
           <a>
-            <div className={styles.row} key={country.id}>
+            <div className={styles.row}>
               <div className={styles.flag}>
                 <img src={country.flag} alt={country.name} />
               </div>

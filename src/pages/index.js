@@ -13,8 +13,6 @@ export default function Home({ countries }) {
       country.subregion.toLowerCase().includes(keyword)
   );
 
-  console.log(countries);
-
   const onInputChange = (e) => {
     e.preventDefault();
     setKeyword(e.target.value.toLowerCase());
